@@ -7,7 +7,17 @@
 
 body {
 
-    background: burlywood
+    background: burlywood;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+
+    overflow: hidden;
 }
 
 .clock {
@@ -20,7 +30,7 @@ body {
 
     border-radius: 50%;
 
-    border: 2px solid brown;
+    border: 5px solid brown;
 
     position: relative;
 }
@@ -39,29 +49,33 @@ body {
 
     transform: rotate(var(--rotation));
 
+    font-size: 1.5rem;
+
+    font-weight: 1000;
+
 }
 
-.clock .number1 { --rotation: 30deg; }
+.clock .number1 { --rotation: 30deg; color: aqua;}
 
-.clock .number2 { --rotation: 60deg; }
+.clock .number2 { --rotation: 60deg; color: aquamarine }
 
-.clock .number3 { --rotation: 90deg; }
+.clock .number3 { --rotation: 90deg; color: blue}
 
-.clock .number4 { --rotation: 120deg; }
+.clock .number4 { --rotation: 120deg; color: greenyellow}
 
-.clock .number5 { --rotation: 150deg; }
+.clock .number5 { --rotation: 150deg; color: rgb(66, 231, 66)}
 
-.clock .number6 { --rotation: 180deg; }
+.clock .number6 { --rotation: 180deg; color: green}
 
-.clock .number7 { --rotation: 210deg; }
+.clock .number7 { --rotation: 210deg; color: orange}
 
-.clock .number8 { --rotation: 240deg; }
+.clock .number8 { --rotation: 240deg; color: orangered}
 
-.clock .number9 { --rotation: 270deg; }
+.clock .number9 { --rotation: 270deg; color: red}
 
-.clock .number10 { --rotation: 300deg; }
+.clock .number10 { --rotation: 300deg; color: violet}
 
-.clock .number11 { --rotation: 330deg; }
+.clock .number11 { --rotation: 330deg; color: purple}
 
 .clock .number12 { --rotation: 0deg; }
 
@@ -102,13 +116,32 @@ body {
 
 .clock::after {
 
-    content: ''
+    content: '';
 
+    position: absolute;
+
+    background-color: orangered;
+
+    z-index: 11;
+
+    width: 15px;
+
+    height: 15px;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate( -50%, -50%);
+
+    border-radius: 50%;
+
+    border: 1px solid black;
 }
 
 .clock .hand.second {
 
-    --rotation: 120;
+    /* --rotation: 120; */
     
     width: 3px;
 
@@ -119,7 +152,7 @@ body {
 
 .clock .hand.minute {
 
-    --rotation: 60;
+    /* --rotation: 60; */
     
     width: 8px;
 
