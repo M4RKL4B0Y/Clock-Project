@@ -5,6 +5,7 @@
     font-family:'Courier New', Courier, monospace;
 }
 
+
 body {
 
     background: burlywood;
@@ -55,6 +56,8 @@ body {
 
 }
 
+
+
 .clock .number1 { --rotation: 30deg; color: aqua;}
 
 .clock .number2 { --rotation: 60deg; color: aquamarine }
@@ -78,6 +81,85 @@ body {
 .clock .number11 { --rotation: 330deg; color: purple}
 
 .clock .number12 { --rotation: 0deg; }
+
+
+.clock .minute {
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    text-align: center;
+
+    transform: rotate(var(--rotation));
+
+    font-size: 1.5rem;
+
+    font-weight: 1000;
+}
+
+/* .clock .minute1 { --rotation: 6deg;}
+.clock .minute2 { --rotation: 12deg;}
+.clock .minute3 { --rotation: 18deg;}
+.clock .minute4 { --rotation: 24deg;}
+
+.clock .minute6 { --rotation: 36deg;}
+.clock .minute7  { --rotation: 42deg;}
+.clock .minute8  { --rotation: 48deg;}
+.clock .minute9  { --rotation: 54deg;}
+
+.clock .minute11 { --rotation: 66deg;}
+.clock .minute12 { --rotation: 72deg;}
+.clock .minute13 { --rotation: 78deg;}
+.clock .minute14 { --rotation: 84deg;}
+
+.clock .minute16 { --rotation: 96deg;}
+.clock .minute17 { --rotation: 102deg;}
+.clock .minute18 { --rotation: 108deg;}
+.clock .minute19 { --rotation: 114deg;}
+
+.clock .minute21 { --rotation: 126deg;}
+.clock .minute22 { --rotation: 132deg;}
+.clock .minute23 { --rotation: 138deg;}
+.clock .minute24 { --rotation: 144deg;}
+
+.clock .minute26 { --rotation: 156deg;}
+.clock .minute27 { --rotation: 162deg;}
+.clock .minute28 { --rotation: 168deg;}
+.clock .minute29 { --rotation: 174deg;}
+
+.clock .minute31 { --rotation: 186deg;}
+.clock .minute32 { --rotation: 192deg;}
+.clock .minute33 { --rotation: 198deg;}
+.clock .minute34 { --rotation: 204deg;}
+
+.clock .minute36 { --rotation: 216deg;}
+.clock .minute37 { --rotation: 222deg;}
+.clock .minute38 { --rotation: 228deg;}
+.clock .minute39 { --rotation: 234deg;}
+
+.clock .minute41 { --rotation: 246deg;}
+.clock .minute42 { --rotation: 252deg;}
+.clock .minute43 { --rotation: 258deg;}
+.clock .minute44 { --rotation: 264deg;}
+
+.clock .minute46 { --rotation: 276deg;}
+.clock .minute47 { --rotation: 282deg;}
+.clock .minute48 { --rotation: 288deg;}
+.clock .minute49 { --rotation: 294deg;}
+
+.clock .minute51 { --rotation: 306deg;}
+.clock .minute52 { --rotation: 312deg;}
+.clock .minute53 { --rotation: 318deg;}
+.clock .minute54 { --rotation: 324deg;}
+
+.clock .minute56 { --rotation: 336deg;}
+.clock .minute57 { --rotation: 342deg;}
+.clock .minute58 { --rotation: 348deg;}
+.clock .minute59 { --rotation: 354deg;} */
+
 
 
 .clock .hand {
@@ -168,4 +250,4 @@ body {
     height: 35%;
 
     background-color: orange;
-}
+} 
