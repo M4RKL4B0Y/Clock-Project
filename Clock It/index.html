@@ -6,6 +6,8 @@
 
     <meta charset="UTF-8">
 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="style.css" rel="stylesheet">
@@ -115,10 +117,37 @@
     </div>
 
 <div class="time">
-    <form action="/url" method="GET">
+
+    <form action="/greatjob.html" method="GET">
+
         <p>What time is it?:</p>
-        <input type="text">
+
+        <input type="time">
+
+        <!-- <button type="submit">Submit</button> -->
+
+        <div class="popup" onclick="myFunction()">Check It
+
+            <span class="popuptext" id="myPopup">GREAT JOB!!!</span>
+
+          </div>
+
+          <script>
+
+            // When the user clicks on <div>, open the popup
+
+            function myFunction() {
+
+              var popup = document.getElementById("myPopup");
+
+              popup.classList.toggle("show");
+
+            }
+
+            </script>
+
     </form>
+
 </div>
 
 </body>

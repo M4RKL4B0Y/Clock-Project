@@ -5,7 +5,6 @@
     font-family:'Courier New', Courier, monospace;
 }
 
-
 body {
 
     background: burlywood;
@@ -51,8 +50,6 @@ body {
 .clock {
 
     display: flex;
-
-
 
     width: 300px;
 
@@ -309,3 +306,88 @@ body {
 
     margin-left: 20px;
 }
+
+
+.popup {
+
+    position: relative;
+
+    display: inline-block;
+
+    cursor: pointer;
+
+  }
+  
+  .popup .popuptext {
+
+    visibility: hidden;
+
+    width: 160px;
+
+    background-color: black;
+
+    color: white;
+
+    text-align: center;
+
+    border-radius: 6px;
+
+    padding: 8px 0;
+
+    position: absolute;
+
+    z-index: 1;
+
+    bottom: 125%;
+
+    left: 50%;
+
+    margin-left: -80px;
+
+  }
+  
+  .popup .popuptext::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 100%;
+
+    left: 50%;
+
+    margin-left: -5px;
+
+    border-width: 5px;
+
+    border-style: solid;
+
+    border-color: #555 transparent transparent transparent;
+
+  }
+  
+  .popup .show {
+
+    visibility: visible;
+
+    -webkit-animation: fadeIn 0s;
+
+    animation: fadeIn 0s
+
+  }
+  
+  @-webkit-keyframes fadeIn {
+
+    from {opacity: 0;}
+
+    to {opacity: 1;}
+
+  }
+  
+  @keyframes fadeIn {
+
+    from {opacity: 0;}
+
+    to {opacity:1 ;}
+
+  }
