@@ -18,10 +18,14 @@ body {
 
     min-height: 100vh;
 
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .clock {
+
+    display: flex;
+
+
 
     width: 300px;
 
@@ -251,3 +255,28 @@ body {
 
     background-color: orange;
 } 
+
+.time {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 300px;
+
+    height: 300px;
+
+    background-color: beige;
+
+    border-radius: 35%;
+
+    border: 5px solid brown;
+
+    position: relative;
+
+    font-size: 1rem;
+
+    font-weight: 1000;
+}
