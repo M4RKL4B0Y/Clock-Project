@@ -29,3 +29,7 @@ function setRotation(element, rotationRatio) {
 }
 
 setClock()
+
+// setInterval(setTime, 60)
+
+// const
